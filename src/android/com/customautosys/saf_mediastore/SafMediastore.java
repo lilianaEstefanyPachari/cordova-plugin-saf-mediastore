@@ -270,14 +270,8 @@ public class SafMediastore extends CordovaPlugin implements ValueCallback<String
 		}
 	}
 
-	public boolean deleteFile(JSONArray args,CallbackContext callbackContext){
-		try{
-			callbackContext.success(cordovaInterface.getContext().getContentResolver().delete(Uri.parse(args.getString(0)),null));
-			return true;
-		}catch(Exception e){
-			callbackContext.error(debugLog(e));
-			return false;
-		}
+	public boolean deleteFile(){
+		return false;
 	}
 
 	public boolean getFileName(JSONArray args,CallbackContext callbackContext){
