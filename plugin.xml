@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <plugin xmlns:android="http://schemas.android.com/apk/res/android"
-	id="cordova-plugin-saf-mediastore" version="0.7.0"
+	id="cordova-plugin-saf-mediastore" version="1.0.11"
 	xmlns="http://www.w3.org/ns/plugins">
 
 	<name>cordova-plugin-saf-mediastore</name>
@@ -24,7 +24,7 @@
 
 		<config-file parent="/manifest" target="AndroidManifest.xml">
 			<uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
-			<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+			<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" android:maxSdkVersion="32"/>
 		</config-file>
 
 		<source-file src="src/android/com/customautosys/saf_mediastore/SafMediastore.java" target-dir="src/com/customautosys/saf_mediastore/"/>
